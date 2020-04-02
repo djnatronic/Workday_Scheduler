@@ -33,7 +33,8 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
+  margin-left: 15%;
 }
 
 .hour {
@@ -50,6 +51,7 @@ textarea{
 .present {
   background-color: #ff6961;
   color: white;
+  width: 150px;
 }
 
 .future {
@@ -69,3 +71,5 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+.col-1 {width: 8.33%;}
