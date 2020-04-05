@@ -3,12 +3,12 @@
 ## Author: Nathan Bowdish
 ## Email:  djnatronic@gmail.com
 
-This is a daily planner application will save and retreive value from local storage\n
+This is a daily planner application will save and retreive value from local storage<br/>
 
 ### Technologies Used
-HTML\n
-Jquery\n
-momentjs\n 
+HTML<br/>
+Jquery<br/>
+momentjs<br/>
 
 
 
