@@ -36,39 +36,39 @@
       <!-- Timeblocks go here -->
     <div id="9Div" class="row"> <div class="time-block"> 9AM&nbsp&nbsp </div>
     <input id="9Input" type="text" id="fname" name="fname" size="95" class="past">
-    <button class="saveBtn"><i class="far fa-save fa-1x"></i></button>
+    <button class="saveBtn" onclick="myFunction('9Input')"><i class="far fa-save fa-1x"></i></button>
     </div>
     <div id="10Div" class="row"><div> 10AM </div>
     <input id="10Input" type="text" id="fname" name="fname" size="95" class="past">
-    <button class="saveBtn"><i class="far fa-save fa-1x"></i></button>
+    <button class="saveBtn" onclick="myFunction('10Input')"><i class="far fa-save fa-1x"></i></button>
     </div>
     <div id="11Div" class="row"> <div> 11AM </div>
     <input id="11Input" type="text" id="fname" name="fname" size="95" rows="2"  class="past">
-    <button class="saveBtn"><i class="far fa-save fa-1x"></i></button>
+    <button class="saveBtn" onclick="myFunction('11Input')"><i class="far fa-save fa-1x"></i></button>
     </div>
     <div id="12Div" class="row"> <div> 12PM </div>
     <input id="12Input" type="text" id="fname" name="fname" size="95">
-    <button class="saveBtn"><i class="far fa-save fa-1x"></i></button>
+    <button class="saveBtn" onclick="myFunction('12Input')"><i class="far fa-save fa-1x"></i></button>
     </div>
     <div id="13Div" class="row"> <div> 1PM&nbsp&nbsp </div>
     <input id="13Input" type="text" id="fname" name="fname" size="95">
-    <button class="saveBtn"><i class="far fa-save fa-1x"></i></button>
+    <button class="saveBtn" onclick="myFunction()"><i class="far fa-save fa-1x"></i></button>
     </div>
     <div id="14Div" class="row"> <div> 2PM&nbsp&nbsp </div>
     <input id="14Input" type="text" id="fname" name="fname" size="95">
-    <button class="saveBtn"><i class="far fa-save fa-1x"></i></button>
+    <button class="saveBtn"onclick="myFunction()" ><i class="far fa-save fa-1x"></i></button>
     </div>
     <div id="15Div" class="row"> <div> 3PM&nbsp&nbsp </div>
     <input id="15Input" type="text" id="fname" name="fname" size="95">
-    <button class="saveBtn"><i class="far fa-save fa-1x"></i></button>
+    <button class="saveBtn" onclick="myFunction()"><i class="far fa-save fa-1x"></i></button>
     </div>
     <div id="16Div" class="row"> <div> 4PM&nbsp&nbsp </div>
     <input id="16Input" type="text" id="fname" name="fname" size="95">
-    <button class="saveBtn"><i class="far fa-save fa-1x"></i></button>
+    <button class="saveBtn" onclick="myFunction()"><i class="far fa-save fa-1x"></i></button>
     </div>
     <div id="17Div" class="row"> <div> 5PM&nbsp&nbsp </div>
     <input id="17Input" type="text" id="fname" name="fname" size="95">
-    <button class="saveBtn"><i class="far fa-save fa-1x"></i></button>
+    <button class="saveBtn"onclick="myFunction()" ><i class="far fa-save fa-1x"></i></button>
     </div>
 
 
@@ -110,11 +110,23 @@
             $(createSelector).addClass("past")
             console.log(currentNumber + " Less Than hour " +currentHour)
           } 
+
+         
           
         
         } 
 
-    </script>
+        function myFunction(x){
+            
+            var input = document.getElementById(x);
+            console.log(input.value)
+            console.log(x)
+            localStorage.setItem(x, input.value);
+          }
+myFunction()
+        
+
+    </script>s
 
 
 
