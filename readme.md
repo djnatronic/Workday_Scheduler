@@ -6,7 +6,7 @@ This is a daily planner application will save and retreive value from local stor
 
 
 
-![scheduler demo](./Assets/capture.png)
+![scheduler demo](./Assets/Capture.PNG)
 
 ### Link to the working code
 https://djnatronic.github.io/Workday_Scheduler/
